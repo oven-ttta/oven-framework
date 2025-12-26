@@ -1,0 +1,23 @@
+# Oven Framework - Development Docker Image
+FROM oven/bun:1
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json bun.lockb* ./
+
+# Install dependencies
+RUN bun install
+
+# Copy source code
+COPY . .
+
+# Set environment variables
+ENV NODE_ENV=development
+ENV PORT=3000
+
+# Expose port
+EXPOSE 3000
+
+# Run in development mode with watch
+CMD ["bun", "run", "bin/oven.js", "dev"]

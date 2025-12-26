@@ -1,0 +1,43 @@
+{
+  "name": "oven",
+  "version": "0.1.0",
+  "description": "A full-stack web framework powered by Bun",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "oven": "./bin/oven.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "bun run bin/oven.js dev",
+    "build": "bun run bin/oven.js build",
+    "start": "bun run bin/oven.js start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "bun": ">=1.0.0"
+  },
+  "keywords": [
+    "bun",
+    "framework",
+    "fullstack",
+    "ssr",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT"
+}
