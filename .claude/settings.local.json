@@ -21,7 +21,12 @@
       "Bash(powershell -Command \"& { $env:Path += '';C:\\\\Users\\\\TTTA_\\\\.bun\\\\bin''; bun run scripts/build-static.ts }\")",
       "Bash(/c/Users/TTTA_/.bun/bin/bun.exe run:*)",
       "Bash(npx vercel --version)",
-      "Bash(npx vercel:*)"
+      "Bash(npx vercel:*)",
+      "Bash(git push:*)",
+      "Bash(npm whoami:*)",
+      "Bash(node index.js:*)",
+      "Bash(/c/Users/TTTA_/.bun/bin/bun.exe install:*)",
+      "Bash(timeout 5 /c/Users/TTTA_/.bun/bin/bun.exe run dev:*)"
     ]
   }
 }
