@@ -42,7 +42,7 @@ bun run dev</code></pre>
       <p>Create a new page by adding a <code>page.tsx</code> file in the app directory:</p>
       <pre><code>// app/about/page.tsx
 export default function AboutPage() {
-  return \`&lt;h1&gt;About Us&lt;/h1&gt;\`;
+  return `&lt;h1&gt;About Us&lt;/h1&gt;`;
 }</code></pre>
     `,
   },
@@ -83,23 +83,23 @@ export function GET(request: Request, { params }) {
       <p>The root layout wraps your entire application:</p>
       <pre><code>// app/layout.tsx
 export default function RootLayout({ children }) {
-  return \`
+  return `
     &lt;html&gt;
-      &lt;body&gt;\${children}&lt;/body&gt;
+      &lt;body&gt;${children}&lt;/body&gt;
     &lt;/html&gt;
-  \`;
+  `;
 }</code></pre>
 
       <h2>Nested Layouts</h2>
       <p>Create layouts for specific sections:</p>
       <pre><code>// app/blog/layout.tsx
 export default function BlogLayout({ children }) {
-  return \`
+  return `
     &lt;div&gt;
       &lt;nav&gt;Blog Navigation&lt;/nav&gt;
-      \${children}
+      ${children}
     &lt;/div&gt;
-  \`;
+  `;
 }</code></pre>
     `,
   },

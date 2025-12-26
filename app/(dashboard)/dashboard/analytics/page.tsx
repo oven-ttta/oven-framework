@@ -33,7 +33,7 @@ export default function AnalyticsPage({ params }: PageProps) {
 
   const maxVisitors = Math.max(...chartData.map(d => d.visitors));
 
-  return \`
+  return `
     <div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
         <div>
@@ -77,18 +77,18 @@ export default function AnalyticsPage({ params }: PageProps) {
         <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
           <h3 style="margin-bottom: 1.5rem;">Visitors Overview</h3>
           <div style="display: flex; align-items: flex-end; gap: 1rem; height: 200px;">
-            \${chartData.map(d => \`
+            ${chartData.map(d => `
               <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
                 <div style="
                   width: 100%;
-                  height: \${(d.visitors / maxVisitors) * 180}px;
+                  height: ${(d.visitors / maxVisitors) * 180}px;
                   background: linear-gradient(180deg, #ff6b35, #f7931e);
                   border-radius: 8px 8px 0 0;
                   transition: height 0.3s;
                 "></div>
-                <div style="color: #666; font-size: 0.8rem; margin-top: 0.5rem;">\${d.month}</div>
+                <div style="color: #666; font-size: 0.8rem; margin-top: 0.5rem;">${d.month}</div>
               </div>
-            \`).join('')}
+            `).join('')}
           </div>
         </div>
 
@@ -96,17 +96,17 @@ export default function AnalyticsPage({ params }: PageProps) {
         <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
           <h3 style="margin-bottom: 1.5rem;">Traffic Sources</h3>
           <div style="display: flex; flex-direction: column; gap: 1rem;">
-            \${sources.map(s => \`
+            ${sources.map(s => `
               <div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
-                  <span style="color: #333;">\${s.name}</span>
-                  <span style="color: #666;">\${s.percent}%</span>
+                  <span style="color: #333;">${s.name}</span>
+                  <span style="color: #666;">${s.percent}%</span>
                 </div>
                 <div style="background: #f0f0f0; height: 8px; border-radius: 4px; overflow: hidden;">
-                  <div style="background: linear-gradient(90deg, #ff6b35, #f7931e); height: 100%; width: \${s.percent}%; border-radius: 4px;"></div>
+                  <div style="background: linear-gradient(90deg, #ff6b35, #f7931e); height: 100%; width: ${s.percent}%; border-radius: 4px;"></div>
                 </div>
               </div>
-            \`).join('')}
+            `).join('')}
           </div>
         </div>
       </div>
@@ -123,18 +123,18 @@ export default function AnalyticsPage({ params }: PageProps) {
             </tr>
           </thead>
           <tbody>
-            \${topPages.map((page, i) => \`
+            ${topPages.map((page, i) => `
               <tr style="border-bottom: 1px solid #f0f0f0;">
                 <td style="padding: 1rem;">
-                  <code style="background: #f5f5f5; padding: 0.25rem 0.5rem; border-radius: 4px;">\${page.path}</code>
+                  <code style="background: #f5f5f5; padding: 0.25rem 0.5rem; border-radius: 4px;">${page.path}</code>
                 </td>
-                <td style="padding: 1rem; text-align: right; font-weight: 500;">\${page.views.toLocaleString()}</td>
-                <td style="padding: 1rem; text-align: right; color: #666;">\${page.avgTime}</td>
+                <td style="padding: 1rem; text-align: right; font-weight: 500;">${page.views.toLocaleString()}</td>
+                <td style="padding: 1rem; text-align: right; color: #666;">${page.avgTime}</td>
               </tr>
-            \`).join('')}
+            `).join('')}
           </tbody>
         </table>
       </div>
     </div>
-  \`;
+  `;
 }

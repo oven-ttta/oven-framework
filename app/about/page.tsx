@@ -30,7 +30,7 @@ export default function AboutPage({ params }: PageProps) {
     { feature: 'Bundle Size', oven: 'Smaller', next: 'Larger', speed: '~40% less' },
   ];
 
-  return \`
+  return `
     <div style="max-width: 1000px; margin: 0 auto; padding: 4rem 2rem;">
       <!-- Header -->
       <div style="text-align: center; margin-bottom: 4rem;">
@@ -91,14 +91,14 @@ export default function AboutPage({ params }: PageProps) {
               </tr>
             </thead>
             <tbody>
-              \${comparison.map((row, i) => \`
-                <tr style="border-bottom: 1px solid #eee; background: \${i % 2 === 0 ? '#fafafa' : 'white'};">
-                  <td style="padding: 1rem; font-weight: 500;">\${row.feature}</td>
-                  <td style="padding: 1rem; text-align: center; color: #22c55e; font-weight: 600;">\${row.oven}</td>
-                  <td style="padding: 1rem; text-align: center; color: #666;">\${row.next}</td>
-                  <td style="padding: 1rem; text-align: center; color: #ff6b35; font-weight: 500;">\${row.speed}</td>
+              ${comparison.map((row, i) => `
+                <tr style="border-bottom: 1px solid #eee; background: ${i % 2 === 0 ? '#fafafa' : 'white'};">
+                  <td style="padding: 1rem; font-weight: 500;">${row.feature}</td>
+                  <td style="padding: 1rem; text-align: center; color: #22c55e; font-weight: 600;">${row.oven}</td>
+                  <td style="padding: 1rem; text-align: center; color: #666;">${row.next}</td>
+                  <td style="padding: 1rem; text-align: center; color: #ff6b35; font-weight: 500;">${row.speed}</td>
                 </tr>
-              \`).join('')}
+              `).join('')}
             </tbody>
           </table>
         </div>
@@ -119,13 +119,13 @@ export default function AboutPage({ params }: PageProps) {
               </tr>
             </thead>
             <tbody>
-              \${fileConventions.map((row, i) => \`
-                <tr style="border-bottom: 1px solid #eee; background: \${i % 2 === 0 ? '#fafafa' : 'white'};">
-                  <td style="padding: 1rem;"><code style="background: #f0f0f0; padding: 0.25rem 0.5rem; border-radius: 4px; color: #ff6b35;">\${row.file}</code></td>
-                  <td style="padding: 1rem; color: #333;">\${row.purpose}</td>
-                  <td style="padding: 1rem; color: #666;">\${row.purposeTh}</td>
+              ${fileConventions.map((row, i) => `
+                <tr style="border-bottom: 1px solid #eee; background: ${i % 2 === 0 ? '#fafafa' : 'white'};">
+                  <td style="padding: 1rem;"><code style="background: #f0f0f0; padding: 0.25rem 0.5rem; border-radius: 4px; color: #ff6b35;">${row.file}</code></td>
+                  <td style="padding: 1rem; color: #333;">${row.purpose}</td>
+                  <td style="padding: 1rem; color: #666;">${row.purposeTh}</td>
                 </tr>
-              \`).join('')}
+              `).join('')}
             </tbody>
           </table>
         </div>
@@ -137,14 +137,14 @@ export default function AboutPage({ params }: PageProps) {
         <p style="color: #666; margin-bottom: 1.5rem;">แผนการพัฒนา</p>
 
         <div style="position: relative; padding-left: 2rem; border-left: 3px solid #ff6b35;">
-          \${timeline.map((item, i) => \`
+          ${timeline.map((item, i) => `
             <div style="margin-bottom: 2rem; position: relative;">
               <div style="
                 position: absolute;
                 left: -2.65rem;
                 width: 1.25rem;
                 height: 1.25rem;
-                background: \${i === 0 ? '#ff6b35' : '#ddd'};
+                background: ${i === 0 ? '#ff6b35' : '#ddd'};
                 border-radius: 50%;
                 border: 3px solid white;
                 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -152,20 +152,20 @@ export default function AboutPage({ params }: PageProps) {
               <div style="background: white; padding: 1.25rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                   <span style="
-                    background: \${i === 0 ? '#ff6b35' : '#666'};
+                    background: ${i === 0 ? '#ff6b35' : '#666'};
                     color: white;
                     padding: 0.25rem 0.75rem;
                     border-radius: 999px;
                     font-size: 0.85rem;
                     font-weight: 600;
-                  ">v\${item.version}</span>
-                  <span style="color: #888; font-size: 0.9rem;">\${item.date}</span>
+                  ">v${item.version}</span>
+                  <span style="color: #888; font-size: 0.9rem;">${item.date}</span>
                 </div>
-                <h3 style="margin-bottom: 0.25rem;">\${item.title}</h3>
-                <p style="color: #666; margin: 0;">\${item.desc}</p>
+                <h3 style="margin-bottom: 0.25rem;">${item.title}</h3>
+                <p style="color: #666; margin: 0;">${item.desc}</p>
               </div>
             </div>
-          \`).join('')}
+          `).join('')}
         </div>
       </section>
 
@@ -194,5 +194,5 @@ export default function AboutPage({ params }: PageProps) {
         </div>
       </section>
     </div>
-  \`;
+  `;
 }

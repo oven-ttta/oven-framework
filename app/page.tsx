@@ -64,7 +64,7 @@ export default function HomePage({ searchParams }: PageProps) {
     { value: '∞', label: 'Possibilities', labelTh: 'ความเป็นไปได้' },
   ];
 
-  return \`
+  return `
     <div style="background: linear-gradient(180deg, #fff5f2 0%, #ffffff 100%);">
       <!-- Hero Section -->
       <section style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; text-align: center;">
@@ -116,13 +116,13 @@ export default function HomePage({ searchParams }: PageProps) {
       <!-- Stats Section -->
       <section style="background: #1a1a1a; padding: 3rem 2rem; margin: 2rem 0;">
         <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center;">
-          \${stats.map(stat => \`
+          ${stats.map(stat => `
             <div>
-              <div style="font-size: 3rem; font-weight: bold; color: #ff6b35;">\${stat.value}</div>
-              <div style="color: #888;">\${stat.label}</div>
-              <div style="color: #666; font-size: 0.9rem;">\${stat.labelTh}</div>
+              <div style="font-size: 3rem; font-weight: bold; color: #ff6b35;">${stat.value}</div>
+              <div style="color: #888;">${stat.label}</div>
+              <div style="color: #666; font-size: 0.9rem;">${stat.labelTh}</div>
             </div>
-          \`).join('')}
+          `).join('')}
         </div>
       </section>
 
@@ -132,15 +132,15 @@ export default function HomePage({ searchParams }: PageProps) {
         <p style="text-align: center; color: #666; margin-bottom: 3rem;">ความสามารถที่ครบครัน</p>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-          \${features.map(f => \`
+          ${features.map(f => `
             <div style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
-              <div style="font-size: 2.5rem; margin-bottom: 1rem;">\${f.icon}</div>
-              <h3 style="color: #333; margin-bottom: 0.25rem; font-size: 1.3rem;">\${f.title}</h3>
-              <p style="color: #ff6b35; font-size: 0.9rem; margin-bottom: 0.75rem;">\${f.titleTh}</p>
-              <p style="color: #666; line-height: 1.6; margin-bottom: 0.5rem;">\${f.desc}</p>
-              <p style="color: #888; font-size: 0.9rem; line-height: 1.6;">\${f.descTh}</p>
+              <div style="font-size: 2.5rem; margin-bottom: 1rem;">${f.icon}</div>
+              <h3 style="color: #333; margin-bottom: 0.25rem; font-size: 1.3rem;">${f.title}</h3>
+              <p style="color: #ff6b35; font-size: 0.9rem; margin-bottom: 0.75rem;">${f.titleTh}</p>
+              <p style="color: #666; line-height: 1.6; margin-bottom: 0.5rem;">${f.desc}</p>
+              <p style="color: #888; font-size: 0.9rem; line-height: 1.6;">${f.descTh}</p>
             </div>
-          \`).join('')}
+          `).join('')}
         </div>
       </section>
 
@@ -160,10 +160,10 @@ export const metadata = {
 };
 
 export default function Home({ searchParams }: PageProps) {
-  return \\\`
+  return &#96;
     &lt;h1&gt;Hello, Oven! 🔥&lt;/h1&gt;
     &lt;p&gt;Build amazing apps with Bun&lt;/p&gt;
-  \\\`;
+  &#96;;
 }</code></pre>
           </div>
 
@@ -263,5 +263,5 @@ my-app/
         </div>
       </section>
     </div>
-  \`;
+  `;
 }

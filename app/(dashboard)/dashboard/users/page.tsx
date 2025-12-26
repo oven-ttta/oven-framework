@@ -41,7 +41,7 @@ export default function UsersPage({ searchParams }: PageProps) {
     }
   };
 
-  return \`
+  return `
     <div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
         <div>
@@ -61,15 +61,15 @@ export default function UsersPage({ searchParams }: PageProps) {
 
       <!-- Stats -->
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
-        \${stats.map(s => \`
+        ${stats.map(s => `
           <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 1rem;">
-            <div style="font-size: 2rem;">\${s.icon}</div>
+            <div style="font-size: 2rem;">${s.icon}</div>
             <div>
-              <div style="font-size: 1.75rem; font-weight: bold;">\${s.value.toLocaleString()}</div>
-              <div style="color: #666; font-size: 0.9rem;">\${s.label}</div>
+              <div style="font-size: 1.75rem; font-weight: bold;">${s.value.toLocaleString()}</div>
+              <div style="color: #666; font-size: 0.9rem;">${s.label}</div>
             </div>
           </div>
-        \`).join('')}
+        `).join('')}
       </div>
 
       <!-- Search and Filter -->
@@ -109,25 +109,25 @@ export default function UsersPage({ searchParams }: PageProps) {
             </tr>
           </thead>
           <tbody>
-            \${users.map(user => \`
+            ${users.map(user => `
               <tr style="border-bottom: 1px solid #f3f4f6;">
                 <td style="padding: 1rem;">
                   <div style="display: flex; align-items: center; gap: 0.75rem;">
-                    <div style="font-size: 1.5rem;">\${user.avatar}</div>
-                    <div style="font-weight: 500;">\${user.name}</div>
+                    <div style="font-size: 1.5rem;">${user.avatar}</div>
+                    <div style="font-weight: 500;">${user.name}</div>
                   </div>
                 </td>
-                <td style="padding: 1rem; color: #6b7280;">\${user.email}</td>
+                <td style="padding: 1rem; color: #6b7280;">${user.email}</td>
                 <td style="padding: 1rem; text-align: center;">
-                  <span style="padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.85rem; \${getRoleBadge(user.role)}">\${user.role}</span>
+                  <span style="padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.85rem; ${getRoleBadge(user.role)}">${user.role}</span>
                 </td>
                 <td style="padding: 1rem; text-align: center;">
                   <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
-                    <span style="width: 8px; height: 8px; border-radius: 50%; background: \${getStatusColor(user.status)};"></span>
-                    <span style="color: \${getStatusColor(user.status)}; text-transform: capitalize;">\${user.status}</span>
+                    <span style="width: 8px; height: 8px; border-radius: 50%; background: ${getStatusColor(user.status)};"></span>
+                    <span style="color: ${getStatusColor(user.status)}; text-transform: capitalize;">${user.status}</span>
                   </span>
                 </td>
-                <td style="padding: 1rem; text-align: center; color: #6b7280;">\${user.joined}</td>
+                <td style="padding: 1rem; text-align: center; color: #6b7280;">${user.joined}</td>
                 <td style="padding: 1rem; text-align: center;">
                   <div style="display: flex; gap: 0.5rem; justify-content: center;">
                     <button style="padding: 0.5rem; border: none; background: #f3f4f6; border-radius: 6px; cursor: pointer;">✏️</button>
@@ -135,7 +135,7 @@ export default function UsersPage({ searchParams }: PageProps) {
                   </div>
                 </td>
               </tr>
-            \`).join('')}
+            `).join('')}
           </tbody>
         </table>
 
@@ -152,5 +152,5 @@ export default function UsersPage({ searchParams }: PageProps) {
         </div>
       </div>
     </div>
-  \`;
+  `;
 }
