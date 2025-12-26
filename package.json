@@ -1,0 +1,26 @@
+{
+  "name": "oven-bun",
+  "version": "0.1.0",
+  "description": "Oven - Next.js-style framework for Bun",
+  "type": "module",
+  "bin": {
+    "oven": "./bin/oven.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "bun",
+    "oven",
+    "framework",
+    "nextjs",
+    "ssr"
+  ],
+  "author": "oven-ttta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oven-ttta/oven-framework"
+  }
+}
