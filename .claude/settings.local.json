@@ -26,7 +26,12 @@
       "Bash(npm whoami:*)",
       "Bash(node index.js:*)",
       "Bash(/c/Users/TTTA_/.bun/bin/bun.exe install:*)",
-      "Bash(timeout 5 /c/Users/TTTA_/.bun/bin/bun.exe run dev:*)"
+      "Bash(timeout 5 /c/Users/TTTA_/.bun/bin/bun.exe run dev:*)",
+      "Bash(npm publish --access public)",
+      "Bash(npx create-oven@0.2.0 test-app --typescript --eslint --tailwind --app --no-src-dir)",
+      "Bash(npx create-oven@0.2.0 test-app --typescript --eslint --tailwind --app --no-install)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(git remote set-url:*)"
     ]
   }
 }
