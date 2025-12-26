@@ -14,44 +14,56 @@ export default function DashboardLayout({ children }: LayoutProps) {
           <a href="/dashboard" style="
             display: block;
             padding: 0.75rem 1rem;
-            color: #888;
+            color: #ccc;
             text-decoration: none;
             border-radius: 8px;
             margin-bottom: 0.25rem;
           ">
-            📊 Overview
+            📊 Overview / ภาพรวม
           </a>
           <a href="/dashboard/analytics" style="
             display: block;
             padding: 0.75rem 1rem;
-            color: #888;
+            color: #ccc;
             text-decoration: none;
             border-radius: 8px;
             margin-bottom: 0.25rem;
           ">
-            📈 Analytics
-          </a>
-          <a href="/dashboard/settings" style="
-            display: block;
-            padding: 0.75rem 1rem;
-            color: #888;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-bottom: 0.25rem;
-          ">
-            ⚙️ Settings
+            📈 Analytics / วิเคราะห์
           </a>
           <a href="/dashboard/users" style="
             display: block;
             padding: 0.75rem 1rem;
-            color: #888;
+            color: #ccc;
             text-decoration: none;
             border-radius: 8px;
             margin-bottom: 0.25rem;
           ">
-            👥 Users
+            👥 Users / ผู้ใช้
+          </a>
+          <a href="/dashboard/settings" style="
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #ccc;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 0.25rem;
+          ">
+            ⚙️ Settings / ตั้งค่า
           </a>
         </nav>
+
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #333;">
+          <a href="/" style="
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #ff6b35;
+            text-decoration: none;
+            border-radius: 8px;
+          ">
+            ← Back to Home
+          </a>
+        </div>
       </aside>
 
       <main style="flex: 1; padding: 2rem; background: #f5f5f5;">
