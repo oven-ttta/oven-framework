@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun run build:vercel",
+  "outputDirectory": "dist",
+  "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Powered-By", "value": "Oven Framework" }
+      ]
+    }
+  ]
+}

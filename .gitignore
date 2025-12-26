@@ -33,3 +33,5 @@ __tests__/
 # Temp
 *.tmp
 *.temp
+
+.vercel
