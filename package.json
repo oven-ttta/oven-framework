@@ -1,0 +1,32 @@
+{
+  "name": "create-oven",
+  "version": "0.3.0",
+  "description": "Create a new Oven project - Next.js-style framework for Bun",
+  "type": "module",
+  "bin": {
+    "create-oven": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "templates"
+  ],
+  "keywords": [
+    "bun",
+    "oven",
+    "framework",
+    "create",
+    "scaffold",
+    "typescript",
+    "fullstack"
+  ],
+  "author": "oven-ttta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oven-ttta/oven-framework"
+  },
+  "homepage": "https://github.com/oven-ttta/oven-framework#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
