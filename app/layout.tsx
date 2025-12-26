@@ -30,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps) {
         </a>
         <div style="display: flex; gap: 1.5rem;">
           <a href="/" style="color: white; text-decoration: none;">Home</a>
+          <a href="/docs" style="color: white; text-decoration: none;">Docs</a>
           <a href="/about" style="color: white; text-decoration: none;">About</a>
           <a href="/blog" style="color: white; text-decoration: none;">Blog</a>
           <a href="/dashboard" style="color: white; text-decoration: none;">Dashboard</a>

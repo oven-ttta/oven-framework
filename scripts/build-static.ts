@@ -12,6 +12,7 @@ const OUTPUT_DIR = 'dist';
 // Define routes to pre-render
 const routes = [
   '/',
+  '/docs',
   '/about',
   '/blog',
   '/dashboard',
