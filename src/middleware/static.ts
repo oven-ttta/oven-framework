@@ -31,7 +31,7 @@ export function serveStatic(options: StaticOptions): Middleware {
       return next();
     }
 
-    let path = ctx.path;
+    let path = ctx.pathname;
 
     // Check if path matches prefix
     if (prefix && !path.startsWith(prefix)) {

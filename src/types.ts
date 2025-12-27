@@ -160,3 +160,19 @@ export type ServerAction = (...args: unknown[]) => Promise<unknown>;
 
 // Revalidation
 export type RevalidateType = number | false;
+
+// API Handler type for defineAPIRoute
+export type APIHandler = (ctx: Context) => Promise<Response | unknown> | Response | unknown;
+
+// Page Meta for legacy render.ts
+export interface PageMeta {
+  title?: string;
+  description?: string;
+  [key: string]: unknown;
+}
+
+// Legacy PageModule loader support
+export interface LegacyPageModule extends PageModule {
+  loader?: (ctx: Context) => Promise<Record<string, unknown>> | Record<string, unknown>;
+  meta?: PageMeta;
+}

@@ -31,4 +31,7 @@ export type {
   NotFoundModule,
   RouteModule,
   CookieOptions,
+  APIHandler,
+  PageMeta,
+  LegacyPageModule,
 } from './types';

@@ -31,7 +31,9 @@
       "Bash(npx create-oven@0.2.0 test-app --typescript --eslint --tailwind --app --no-src-dir)",
       "Bash(npx create-oven@0.2.0 test-app --typescript --eslint --tailwind --app --no-install)",
       "Bash(npx create-next-app@latest:*)",
-      "Bash(git remote set-url:*)"
+      "Bash(git remote set-url:*)",
+      "Bash(git branch:*)",
+      "Bash(timeout 5 /c/Users/TTTA_/.bun/bin/bun.exe run:*)"
     ]
   }
 }

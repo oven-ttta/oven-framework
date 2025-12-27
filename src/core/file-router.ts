@@ -1,4 +1,4 @@
-import type { Context, PageModule, RouteHandler } from '../types';
+import type { Context, LegacyPageModule, RouteHandler } from '../types';
 import { Router } from './router';
 import { renderHTML } from './render';
 import { html } from './route';
@@ -113,7 +113,7 @@ export class FileRouter {
     return async (ctx: Context): Promise<Response> => {
       try {
         // Dynamic import the page module
-        const module: PageModule = await import(
+        const module: LegacyPageModule = await import(
           Bun.resolveSync('./' + filePath, process.cwd())
         );
 
@@ -126,8 +126,7 @@ export class FileRouter {
         // Render the page
         const content = await module.default({
           params: ctx.params,
-          query: ctx.query,
-          data,
+          searchParams: ctx.searchParams,
         });
 
         const htmlContent = renderHTML(content, {

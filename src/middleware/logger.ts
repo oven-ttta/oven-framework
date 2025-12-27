@@ -39,7 +39,7 @@ function formatLog(
   const timestamp = new Date().toISOString();
   const status = res.status;
   const method = ctx.method;
-  const path = ctx.path;
+  const path = ctx.pathname;
   const ms = duration.toFixed(2);
 
   // Color codes for terminal
