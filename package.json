@@ -1,22 +1,23 @@
 {
   "name": "oven",
-  "version": "0.1.0",
-  "description": "A full-stack web framework powered by Bun",
+  "version": "0.1.1",
+  "description": "A full-stack web framework powered by Bun - Next.js style routing with blazing fast performance",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "./src/index.ts",
   "bin": {
     "oven": "./bin/oven.js"
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./client": {
-      "import": "./dist/client/index.js",
-      "types": "./dist/client/index.d.ts"
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
     }
   },
+  "files": [
+    "src",
+    "bin",
+    "README.md"
+  ],
   "scripts": {
     "dev": "bun run bin/oven.js dev",
     "build": "bun run bin/oven.js build",
@@ -37,8 +38,20 @@
     "framework",
     "fullstack",
     "ssr",
-    "web"
+    "web",
+    "nextjs",
+    "react",
+    "typescript",
+    "app-router"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": "ovenx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oven-ttta/oven-framework.git"
+  },
+  "homepage": "https://oven-drab.vercel.app",
+  "bugs": {
+    "url": "https://github.com/oven-ttta/oven-framework/issues"
+  }
 }
